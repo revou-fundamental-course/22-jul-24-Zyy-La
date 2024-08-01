@@ -1,1 +1,156 @@
 /*ini css*/
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #999999;
+    padding: 0px;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 300px;
+    background: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Package Section */
+#our-package {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.package {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.package-item {
+    flex: 1 1 18%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333333;
+}
+
+.contact-form form {
+    width: 48%;
+    background-color: #555555;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form form label, 
+.contact-form form input, 
+.contact-form form textarea, 
+.contact-form form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form form button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #999999;
+    padding: 10px;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

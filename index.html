@@ -1,12 +1,70 @@
-<  <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Bookstore</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#our-package">Our Package</a></li>
+                    <li><a href="#contact">Call Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="slider">
+            <div class="slide" id="slide1">https://id-test-11.slatic.net/p/e19e765b16abf87544fb1a9d4ec358f3.jpg</div>
+            <div class="slide" id="slide2"><picture>https://id-test-11.slatic.net/p/e19e765b16abf87544fb1a9d4ec358f3.jpg</picture></div>
+            <div class="slide" id="slide3">Banner 3</div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="our-package">
+        <h2>Our Package</h2>
+        <div class="package">
+            <div class="package-item">Sejarah</div>
+            <div class="package-item">Misteri</div>
+            <div class="package-item">Fantasy</div>
+            <div class="package-item">Action</div>
+            <div class="package-item">Komedi</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>&copy; 2024 Bookstore</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
